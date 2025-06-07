@@ -23,7 +23,7 @@ export default function Navbar({ passData }) {
                     <li><input onChange={(e) => passData(e.target.value)} type="text" placeholder='Search...' className='bg-white text-black outline-0 rounded-2xl px-4 py-1' /></li>
                 </ul>
                 <Link to='/shop' className='lg:hidden md:block mt-2 sm:block block cursor-pointer'>Shop</Link>
-                <input onChange={(e) => console.log(e.target.value)} type="text" placeholder='Search...' className='bg-white lg:hidden md:block sm:block block lg:mt-0 md:mt-0 sm:mt-0 mt-3  text-black outline-0 rounded-2xl pl-2 py-1' />
+                <input onChange={(e) => passData(e.target.value)} type="text" placeholder='Search...' className='bg-white lg:hidden md:block sm:block block lg:mt-0 md:mt-0 sm:mt-0 mt-3  text-black outline-0 rounded-2xl pl-2 py-1' />
 
             </div>
             <div
