@@ -15,13 +15,14 @@ export default function Navbar({ passData }) {
             <div className="bg-[#1c1b3b] py-5 text-white  md:flex md:flex-row sm:flex-row  flex flex-col lg:justify-between md:justify-between sm:justify-evenly items-center p-4 px-[25px]">
                 <Link to='/' className="text-xl z-50">Beauty Product</Link>
                 <ul className="hidden lg:flex gap-6">
-                    <Link to='/shop' className=' cursor-pointer'>Shop</Link>
+                    <Link to='/shop' className=' block cursor-pointer'>Shop</Link>
                     <Link to='/' className=' cursor-pointer'>Beauty</Link>
                     <Link to='/' className=' cursor-pointer'>Fregrances</Link>
                     <Link to='/' className=' cursor-pointer'>Groceries</Link>
                     <Link to='/' className=' cursor-pointer'>Furniture</Link>
                     <li><input onChange={(e) => passData(e.target.value)} type="text" placeholder='Search...' className='bg-white text-black outline-0 rounded-2xl px-4 py-1' /></li>
                 </ul>
+                <Link to='/shop' className='lg:hidden md:block mt-2 sm:block block cursor-pointer'>Shop</Link>
                 <input onChange={(e) => console.log(e.target.value)} type="text" placeholder='Search...' className='bg-white lg:hidden md:block sm:block block lg:mt-0 md:mt-0 sm:mt-0 mt-3  text-black outline-0 rounded-2xl pl-2 py-1' />
 
             </div>
